@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: #F9FAFB;
+  color: #1F2937;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Carrusel infinito */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+/* Rotación lenta SVG circular */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+  transform-origin: center;
+}
