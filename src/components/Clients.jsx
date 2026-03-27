@@ -17,7 +17,7 @@ function ClientLogo({ name, logo }) {
       <img
         src={logo}
         alt={name}
-        className="max-h-20 max-w-full object-contain grayscale hover:grayscale-0 transition-all"
+        className="max-h-20 max-w-full object-contain md:grayscale hover:grayscale-0 transition-all"
       />
     </div>
   )
