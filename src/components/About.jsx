@@ -71,9 +71,9 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Quiénes Somos</span>
+          <span className="text-brand-600 font-semibold text-sm tracking-widest uppercase">Quiénes Somos</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">Sobre Nosotros</h2>
-          <div className="mt-4 w-16 h-1 bg-emerald-600 mx-auto rounded-full" />
+          <div className="mt-4 w-16 h-1 bg-brand-600 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -88,7 +88,7 @@ export default function About() {
             {/* Bloque 1 */}
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="w-6 h-6 rounded-full bg-emerald-600 flex items-center justify-center">
+                <span className="w-6 h-6 rounded-full bg-brand-600 flex items-center justify-center">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -108,13 +108,13 @@ export default function About() {
                 <p>
                   Creemos firmemente que cada pequeño aporte cuenta para la preservación del ambiente. Este es
                   nuestro aporte para el desarrollo sostenible.{' '}
-                  <span className="text-emerald-700 font-medium">Es nuestra visión.</span>
+                  <span className="text-brand-700 font-medium">Es nuestra visión.</span>
                 </p>
               </div>
             </div>
 
             {/* Separador */}
-            <div className="border-l-4 border-emerald-600 pl-6 bg-emerald-50 py-4 pr-4 rounded-r-xl">
+            <div className="border-l-4 border-brand-600 pl-6 bg-brand-50 py-4 pr-4 rounded-r-xl">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Economía Circular</h3>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
@@ -128,7 +128,7 @@ export default function About() {
                 </p>
                 <p>
                   En la práctica, implica reducir los residuos al mínimo.{' '}
-                  <span className="text-emerald-700 font-medium">Es nuestra misión.</span>
+                  <span className="text-brand-700 font-medium">Es nuestra misión.</span>
                 </p>
               </div>
             </div>

@@ -19,26 +19,18 @@ export default function Footer() {
           {/* Logo y descripción */}
           <div className="sm:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-white">
-                  <path
-                    d="M12 2C8 2 4.5 5 4.5 9c0 2.5 1.2 4.7 3 6.1V17h9v-1.9c1.8-1.4 3-3.6 3-6.1C19.5 5 16 2 12 2z"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path d="M9 17v2a3 3 0 0 0 6 0v-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold tracking-widest text-white">CRISALIS</span>
+              <img
+                src="/logoCirsalis.png"
+                alt="Crisalis"
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Empresa tratadora de residuos líder en la Patagonia, comprometida con la economía circular
               y el desarrollo sostenible.
             </p>
-            <div className="mt-4 flex items-center gap-1.5 text-emerald-500 text-xs font-semibold">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <div className="mt-4 flex items-center gap-1.5 text-brand-500 text-xs font-semibold">
+              <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
               Operativa en Río Negro, Neuquén y Nación
             </div>
           </div>
@@ -52,7 +44,7 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={(e) => handleScroll(e, link.href)}
-                    className="text-sm text-gray-400 hover:text-emerald-400 transition-colors"
+                    className="text-sm text-gray-400 hover:text-brand-400 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -91,7 +83,7 @@ export default function Footer() {
             © 2023 CRISALIS. Todos los derechos reservados. Desarrollo Sostenible.
           </p>
           <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-600" />
             <span className="text-xs text-gray-500">Patagonia, Argentina</span>
           </div>
         </div>

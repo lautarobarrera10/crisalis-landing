@@ -21,8 +21,8 @@ function LogoPlaceholder({ name }) {
     .toUpperCase()
 
   return (
-    <div className="shrink-0 w-40 h-20 mx-4 rounded-xl bg-white border border-gray-200 flex flex-col items-center justify-center gap-1 shadow-sm hover:shadow-md hover:border-emerald-200 transition-all group">
-      <div className="w-10 h-10 rounded-full bg-gray-100 group-hover:bg-emerald-50 flex items-center justify-center text-gray-500 group-hover:text-emerald-600 font-bold text-sm transition-all">
+    <div className="shrink-0 w-40 h-20 mx-4 rounded-xl bg-white border border-gray-200 flex flex-col items-center justify-center gap-1 shadow-sm hover:shadow-md hover:border-brand-200 transition-all group">
+      <div className="w-10 h-10 rounded-full bg-gray-100 group-hover:bg-brand-50 flex items-center justify-center text-gray-500 group-hover:text-brand-600 font-bold text-sm transition-all">
         {initials}
       </div>
       <p className="text-xs text-gray-400 font-medium text-center px-2 leading-tight">{name}</p>
@@ -45,11 +45,11 @@ export default function Clients() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <span className="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Confianza comprobada</span>
+          <span className="text-brand-600 font-semibold text-sm tracking-widest uppercase">Confianza comprobada</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">
             Clientes que confían en nosotros
           </h2>
-          <div className="mt-4 w-16 h-1 bg-emerald-600 mx-auto rounded-full" />
+          <div className="mt-4 w-16 h-1 bg-brand-600 mx-auto rounded-full" />
         </motion.div>
 
         {/* Carrusel */}

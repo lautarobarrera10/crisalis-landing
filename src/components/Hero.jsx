@@ -13,7 +13,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Fondo con gradiente y patrón */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-gray-900 to-gray-950" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-900 via-gray-900 to-gray-950" />
 
       {/* Patrón de puntos sutil */}
       <div
@@ -25,8 +25,8 @@ export default function Hero() {
       />
 
       {/* Círculo decorativo grande */}
-      <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-emerald-600/10 blur-3xl" />
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-emerald-500/10 blur-3xl" />
+      <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-600/10 blur-3xl" />
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-brand-500/10 blur-3xl" />
 
       {/* Contenido */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 md:pt-28 pb-28">
@@ -34,9 +34,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 text-sm font-medium"
+          className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-brand-600/20 border border-brand-500/30 text-brand-400 text-sm font-medium"
         >
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-brand-400 animate-pulse" />
           Economía Circular · Patagonia, Argentina
         </motion.div>
 
@@ -47,7 +47,7 @@ export default function Hero() {
           className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6"
         >
           Transformamos{' '}
-          <span className="text-emerald-400">Residuos</span>{' '}
+          <span className="text-brand-400">Residuos</span>{' '}
           en Recursos
           <br />
           <span className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-300">
@@ -73,7 +73,7 @@ export default function Hero() {
           <a
             href="#services"
             onClick={handleScroll}
-            className="group px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-600/30"
+            className="group px-8 py-4 bg-brand-600 hover:bg-brand-500 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-brand-600/30"
           >
             Conoce Nuestros Servicios
           </a>
@@ -83,7 +83,7 @@ export default function Hero() {
               e.preventDefault()
               document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
             }}
-            className="px-8 py-4 border border-white/30 text-white hover:border-emerald-400 hover:text-emerald-400 font-semibold rounded-full transition-all duration-300"
+            className="px-8 py-4 border border-white/30 text-white hover:border-brand-400 hover:text-brand-400 font-semibold rounded-full transition-all duration-300"
           >
             Contáctanos
           </a>
@@ -102,7 +102,7 @@ export default function Hero() {
             { value: '3', label: 'Provincias operativas' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-emerald-400">{stat.value}</div>
+              <div className="text-2xl sm:text-3xl font-bold text-brand-400">{stat.value}</div>
               <div className="text-xs text-gray-400 mt-1 leading-tight">{stat.label}</div>
             </div>
           ))}

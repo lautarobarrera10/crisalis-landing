@@ -27,11 +27,11 @@ function AccordionItem({ title, children }) {
     <div className="border border-gray-200 rounded-xl overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-4 py-3 bg-gray-50 hover:bg-emerald-50 text-gray-800 font-medium text-sm transition-colors"
+        className="w-full flex items-center justify-between px-4 py-3 bg-gray-50 hover:bg-brand-50 text-gray-800 font-medium text-sm transition-colors"
       >
         {title}
         <ChevronDownIcon
-          className={`w-4 h-4 text-emerald-600 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 text-brand-600 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
         />
       </button>
       {open && <div className="px-4 py-3 bg-white text-sm text-gray-600">{children}</div>}
@@ -48,12 +48,12 @@ function ServiceCard({ icon: Icon, title, accent, children, index }) {
       viewport={{ once: true }}
       custom={index}
       className={`bg-white rounded-2xl p-6 shadow-sm border ${
-        accent ? 'border-emerald-500 ring-1 ring-emerald-500/20' : 'border-gray-100'
+        accent ? 'border-brand-500 ring-1 ring-brand-500/20' : 'border-gray-100'
       } hover:shadow-md transition-shadow flex flex-col gap-4`}
     >
       <div className="flex items-start gap-4">
-        <div className="shrink-0 w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center">
-          <Icon className="w-6 h-6 text-emerald-600" />
+        <div className="shrink-0 w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center">
+          <Icon className="w-6 h-6 text-brand-600" />
         </div>
         <h3 className="text-base font-bold text-gray-900 mt-1.5">{title}</h3>
       </div>
@@ -64,7 +64,7 @@ function ServiceCard({ icon: Icon, title, accent, children, index }) {
 
 function Tag({ children }) {
   return (
-    <span className="inline-block px-2 py-0.5 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-md border border-emerald-100">
+    <span className="inline-block px-2 py-0.5 bg-brand-50 text-brand-700 text-xs font-medium rounded-md border border-brand-100">
       {children}
     </span>
   )
@@ -75,7 +75,7 @@ function BulletList({ items }) {
     <ul className="space-y-1.5">
       {items.map((item) => (
         <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-          <CheckCircleIcon className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+          <CheckCircleIcon className="w-4 h-4 text-brand-500 shrink-0 mt-0.5" />
           {item}
         </li>
       ))}
@@ -95,9 +95,9 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Lo que hacemos</span>
+          <span className="text-brand-600 font-semibold text-sm tracking-widest uppercase">Lo que hacemos</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">Nuestros Servicios</h2>
-          <div className="mt-4 w-16 h-1 bg-emerald-600 mx-auto rounded-full" />
+          <div className="mt-4 w-16 h-1 bg-brand-600 mx-auto rounded-full" />
         </motion.div>
 
         {/* Habilitaciones — banda completa */}
@@ -109,7 +109,7 @@ export default function Services() {
           className="mb-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm"
         >
           <div className="flex items-center gap-3 mb-4">
-            <DocumentTextIcon className="w-6 h-6 text-emerald-600 shrink-0" />
+            <DocumentTextIcon className="w-6 h-6 text-brand-600 shrink-0" />
             <h3 className="text-base font-bold text-gray-900">Habilitaciones y Operaciones</h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -221,8 +221,8 @@ export default function Services() {
 
           {/* 6 — Acento / destacado */}
           <ServiceCard icon={BuildingOffice2Icon} title="Nuevos Proyectos" accent index={5}>
-            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
-              <p className="text-sm text-emerald-800 font-medium leading-relaxed">
+            <div className="bg-brand-50 border border-brand-200 rounded-xl p-4">
+              <p className="text-sm text-brand-800 font-medium leading-relaxed">
                 CRISALIS está desarrollando su nueva base en el{' '}
                 <strong>Parque Industrial de Cipolletti, Río Negro</strong>. Con instalaciones y tecnologías
                 modelo adaptadas a la demanda de los clientes y procesos, contará con:

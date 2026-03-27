@@ -16,7 +16,7 @@ const fadeUp = {
 function InfoBlock({ title, items }) {
   return (
     <div className="mb-6">
-      <h3 className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3">{title}</h3>
+      <h3 className="text-sm font-bold text-brand-600 uppercase tracking-widest mb-3">{title}</h3>
       <div className="space-y-2">
         {items.map(({ icon: Icon, text }) => (
           <div key={text} className="flex items-start gap-3">
@@ -57,9 +57,9 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Hablemos</span>
+          <span className="text-brand-600 font-semibold text-sm tracking-widest uppercase">Hablemos</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">Contacto</h2>
-          <div className="mt-4 w-16 h-1 bg-emerald-600 mx-auto rounded-full" />
+          <div className="mt-4 w-16 h-1 bg-brand-600 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -109,7 +109,7 @@ export default function Contact() {
             {/* Mapa placeholder */}
             <div className="mt-6 rounded-2xl overflow-hidden border border-gray-200 bg-gray-100 h-44 flex items-center justify-center">
               <div className="text-center text-gray-400">
-                <MapPinIcon className="w-8 h-8 mx-auto mb-2 text-emerald-400" />
+                <MapPinIcon className="w-8 h-8 mx-auto mb-2 text-brand-400" />
                 <p className="text-sm">General Paz 1087, Cipolletti</p>
                 <p className="text-xs">Río Negro, Argentina</p>
               </div>
@@ -124,15 +124,15 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             {sent ? (
-              <div className="h-full flex flex-col items-center justify-center text-center py-12 gap-4 bg-emerald-50 rounded-2xl border border-emerald-200">
-                <CheckCircleIcon className="w-16 h-16 text-emerald-500" />
+              <div className="h-full flex flex-col items-center justify-center text-center py-12 gap-4 bg-brand-50 rounded-2xl border border-brand-200">
+                <CheckCircleIcon className="w-16 h-16 text-brand-500" />
                 <h3 className="text-xl font-bold text-gray-900">¡Mensaje enviado!</h3>
                 <p className="text-gray-600 max-w-sm">
                   Nos pondremos en contacto contigo a la brevedad. Gracias por confiar en CRISALIS.
                 </p>
                 <button
                   onClick={() => { setSent(false); setForm({ name: '', email: '', company: '', message: '' }) }}
-                  className="mt-4 px-6 py-2 rounded-full border border-emerald-500 text-emerald-600 text-sm font-semibold hover:bg-emerald-50 transition-colors"
+                  className="mt-4 px-6 py-2 rounded-full border border-brand-500 text-brand-600 text-sm font-semibold hover:bg-brand-50 transition-colors"
                 >
                   Enviar otro mensaje
                 </button>
@@ -161,7 +161,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Tu nombre"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
                     />
                   </div>
                   <div>
@@ -174,7 +174,7 @@ export default function Contact() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="tu@email.com"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
                     />
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export default function Contact() {
                     value={form.company}
                     onChange={handleChange}
                     placeholder="Nombre de tu empresa"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
                   />
                 </div>
 
@@ -203,13 +203,13 @@ export default function Contact() {
                     onChange={handleChange}
                     rows={5}
                     placeholder="¿En qué podemos ayudarte?"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-emerald-600/20 active:scale-[0.99]"
+                  className="w-full py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-brand-600/20 active:scale-[0.99]"
                 >
                   Enviar Mensaje
                 </button>
