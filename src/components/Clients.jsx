@@ -1,37 +1,29 @@
 import { motion } from 'framer-motion'
 
 const clients = [
-  { id: 1, name: 'YPF S.A.' },
-  { id: 2, name: 'Repsol' },
-  { id: 3, name: 'Tecpetrol' },
-  { id: 4, name: 'Capsa' },
-  { id: 5, name: 'Shell Argentina' },
-  { id: 6, name: 'Pan American Energy' },
-  { id: 7, name: 'Pluspetrol' },
-  { id: 8, name: 'Municipalidad de Cipolletti' },
+  { id: 1, name: 'Tenaris',              logo: '/clientes/tenaris.png' },
+  { id: 2, name: 'Oldelval',             logo: '/clientes/oldelval.png' },
+  { id: 3, name: 'La Anónima',           logo: '/clientes/laanonima.png' },
+  { id: 4, name: 'Chacra Fernández Oro', logo: '/clientes/chacragfo.png' },
+  { id: 5, name: 'Mecánica 14',          logo: '/clientes/mecanica14.png' },
+  { id: 6, name: 'Indarsa',              logo: '/clientes/indarsa.png' },
+  { id: 7, name: 'RatePlast',            logo: '/clientes/rateplast.png' },
+  { id: 8, name: 'Texproil',             logo: '/clientes/texproil.png' },
 ]
 
-function LogoPlaceholder({ name }) {
-  // Genera 2 letras representativas
-  const initials = name
-    .split(' ')
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join('')
-    .toUpperCase()
-
+function ClientLogo({ name, logo }) {
   return (
-    <div className="shrink-0 w-40 h-20 mx-4 rounded-xl bg-white border border-gray-200 flex flex-col items-center justify-center gap-1 shadow-sm hover:shadow-md hover:border-brand-200 transition-all group">
-      <div className="w-10 h-10 rounded-full bg-gray-100 group-hover:bg-brand-50 flex items-center justify-center text-gray-500 group-hover:text-brand-600 font-bold text-sm transition-all">
-        {initials}
-      </div>
-      <p className="text-xs text-gray-400 font-medium text-center px-2 leading-tight">{name}</p>
+    <div className="shrink-0 w-44 h-20 mx-4 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-sm hover:shadow-md hover:border-brand-200 transition-all px-4">
+      <img
+        src={logo}
+        alt={name}
+        className="max-h-12 max-w-full object-contain grayscale hover:grayscale-0 transition-all"
+      />
     </div>
   )
 }
 
 export default function Clients() {
-  // Duplicamos la lista para el carrusel infinito
   const doubled = [...clients, ...clients]
 
   return (
@@ -66,7 +58,7 @@ export default function Clients() {
 
           <div className="animate-marquee py-4">
             {doubled.map((client, i) => (
-              <LogoPlaceholder key={`${client.id}-${i}`} name={client.name} />
+              <ClientLogo key={`${client.id}-${i}`} name={client.name} logo={client.logo} />
             ))}
           </div>
         </motion.div>
