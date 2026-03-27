@@ -13,11 +13,11 @@ const clients = [
 
 function ClientLogo({ name, logo }) {
   return (
-    <div className="shrink-0 w-44 h-20 mx-4 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-sm hover:shadow-md hover:border-brand-200 transition-all px-4">
+    <div className="shrink-0 w-64 h-32 mx-6 rounded-2xl bg-white border border-gray-200 flex items-center justify-center shadow-sm hover:shadow-md hover:border-brand-200 transition-all px-6">
       <img
         src={logo}
         alt={name}
-        className="max-h-12 max-w-full object-contain grayscale hover:grayscale-0 transition-all"
+        className="max-h-20 max-w-full object-contain grayscale hover:grayscale-0 transition-all"
       />
     </div>
   )
